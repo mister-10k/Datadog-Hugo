@@ -1,0 +1,87 @@
+#index-container #sidebar-wrapper {
+  background-color: #724EEF;
+  width: 180px;
+  height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out; }
+  #index-container #sidebar-wrapper .sidebar-logo {
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  #index-container #sidebar-wrapper .list-group {
+    width: 15rem;
+    margin-bottom: 30px; }
+
+#index-container #page-content-wrapper #navbar {
+  background-color: #724EEF; }
+
+#index-container #page-content-wrapper .navbar-toggler:focus,
+#index-container #page-content-wrapper .navbar-toggler:active,
+#index-container #page-content-wrapper .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none; }
+
+#index-container.toggled #sidebar-wrapper {
+  margin-left: 0; }
+
+@media (min-width: 768px) {
+  #navbar {
+    display: none; } }
+
+@media (max-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0; }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%; }
+  #index-container.toggled #sidebar-wrapper {
+    margin-left: -180px; } }
+
+#footer-container {
+  min-height: 400px;
+  background: linear-gradient(180deg, #443E48 0%, #110617 100%);
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 180px;
+  color: #979797; }
+  #footer-container a {
+    color: #979797; }
+  #footer-container .column-1 button {
+    width: 150px;
+    height: 45px;
+    margin-bottom: 70px; }
+  #footer-container .column-2 {
+    min-width: 281px; }
+  #footer-container hr {
+    border-color: #979797;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  #footer-container .about-blog-mobile {
+    margin-top: 20px;
+    display: none; }
+  #footer-container .footer-bottom {
+    min-height: 60px;
+    color: white; }
+    #footer-container .footer-bottom label {
+      margin-top: 0.4rem !important; }
+    #footer-container .footer-bottom .copyright-mobile {
+      visibility: hidden; }
+
+@media (max-width: 768px) {
+  #footer-container {
+    padding-left: 0; }
+    #footer-container .column-1 button {
+      width: 100%;
+      margin-bottom: 15px; }
+    #footer-container .column-1 .copyright-desktop {
+      visibility: hidden; }
+    #footer-container .column-3, #footer-container .column-4 {
+      display: none; }
+    #footer-container .about-blog-mobile {
+      display: block; }
+    #footer-container .footer-bottom .copyright-mobile {
+      visibility: visible;
+      margin-bottom: 10px; } }

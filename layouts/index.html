@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>{{.Site.Title }}</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  {{ $sass := resources.Get "sass/style.scss" }}
+  {{ $style := $sass | resources.ToCSS }}
+   <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+
+<body>
+  <div class="toggled" id="index-container">
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+      <div class="border-right" id="sidebar-wrapper">
+        
+        <img src="https://datadogko.s3.us-east-2.amazonaws.com/images/index/logo.png" class="sidebar-logo" width="100" height="100">
+        <div class="list-group list-group-flush">
+          <a href="#" class="nav-link text-white font-weight-bold">PRODUCTS</a>
+          <a href="#" class="nav-link text-white font-weight-bold">DOCS</a>
+          <a href="#" class="nav-link text-white font-weight-bold">PRICING</a>
+          <a href="#" class="nav-link text-white font-weight-bold">CUSTOMERS</a>
+          <a href="#" class="nav-link text-white font-weight-bold">ABOUT</a>
+          <a href="#" class="nav-link text-white font-weight-bold">BLOG</a>
+        </div>
+        <a href="#" class="nav-link text-white">Login</a>
+      </div>
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white font-weight-bold" href="#">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white font-weight-bold" href="#">DOCS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white font-weight-bold" href="#">PRICING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white font-weight-bold" href="#">CUSTOMERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white font-weight-bold" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white font-weight-bold" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white">Login</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+          <h1 class="mt-4">Simple Sidebar</h1>
+          <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+          <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+        </div>
+      </div>
+
+    </div>
+    {{ partial "footer" . }}
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
