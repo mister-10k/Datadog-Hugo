@@ -1,0 +1,48 @@
+#feature-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    min-width: 300px;
+
+    img {
+        width: 100%;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+}
+
+@media (min-width: 0px) { 
+    #feature-container {  
+
+        .title {  
+            font-size: 16px;
+        }
+
+        .sub-heading {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (min-width: 1200px) { 
+    #feature-container {  
+
+        .title {  
+            font-size: 16px;
+        }
+
+        .sub-heading {
+            font-size: 32px;
+        }
+    }
+}

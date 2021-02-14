@@ -1,0 +1,28 @@
+<div id="price-card-container">
+    <div class="price-card-inner d-flex flex-column justify-content-between {{ if eq "true" .divider }}border-right p-2{{ end }}">
+        <div class="d-flex flex-column">
+            <label style="color: {{.color}};" class="heading mb-3 font-weight-bold">{{.heading}}</label>
+            <label class="starting-at">Starting at</label>
+            <h1 class="price font-weight-bold">{{.price}}</h1>
+            <label class="per-host-per-month">Per host, per month*</label>
+            <p class="info">
+                Centralize your monitoring of systems and services
+            </p>
+            <ul>
+                {{ range $element := .list }}
+                    <li>{{ $element }}</li>
+                {{ end }}
+            </ul>
+        </div>
+    
+        <span style="border-bottom: 2px solid {{.color}}; color: {{.color}};">
+            <a  style="color: {{.color}};"href="#">See Details</a>
+        </span>
+    </div>   
+</div>
+
+{{ if eq "true" .mobilie }}
+    <div id="price-card-mobile-container">
+
+    </div>
+{{ end }}

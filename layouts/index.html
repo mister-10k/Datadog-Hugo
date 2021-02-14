@@ -5,9 +5,10 @@
   <title>{{.Site.Title }}</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   {{ $sass := resources.Get "sass/style.scss" }}
-  {{ $style := $sass | resources.ToCSS }}
+  {{ $style := $sass | resources.ToCSS | resources.Minify }}
    <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 
@@ -16,8 +17,7 @@
 
     <div class="d-flex">
         <!-- Sidebar -->
-      <div class="border-right" id="sidebar-wrapper">
-        
+      <div class="border-right" id="sidebar-wrapper">       
         <img src="https://datadogko.s3.us-east-2.amazonaws.com/images/index/logo.png" class="sidebar-logo" width="100" height="100">
         <div class="list-group list-group-flush">
           <a href="#" class="nav-link text-white font-weight-bold">PRODUCTS</a>
@@ -34,7 +34,7 @@
       <div id="page-content-wrapper">
 
         <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-
+          <img src="https://datadogko.s3.us-east-2.amazonaws.com/images/index/logo.png" width="50" height="50">
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -66,10 +66,45 @@
           </div>
         </nav>
 
-        <div class="container-fluid">
-          <h1 class="mt-4">Simple Sidebar</h1>
-          <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-          <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+        <div class="container-fluid page-content-inner">
+            <div class="row row-1">
+              <div class="col-xs-12 col-xl-5 mb-5">
+                <div class="page-content-heading d-flex flex-column  justify-content-between">
+                  <div>
+                    <h1 class="font-weight-bold pb-3">Modern <br> monitoring & <br> analytics</h1>
+                    <h4>See inside any stack, any app, at any scale, anywhere.</h4>
+                  </div>
+                  
+                  <button type="button" class="btn try-free-btn">TRY FREE</button>
+                </div>
+              </div>
+              <div class="col-xs-12 col-xl-7">
+                <div class="row">
+                  <div class="card-1-wrapper col-sm mb-5">{{ partial "price-card" (dict "heading" "INFASTRUCTURE" "price" "$15" "info" "Centralize your monitoring of systems and services" "color" "#2B2AA7" "list" (slice "– 250+ integrations" "– Out-of-the-box dashboards" "– 15-month metric retention") "divider" "true") }}</div>
+                  <div class="card-2-wrapper col-sm mb-5">{{ partial "price-card" (dict "heading" "APM" "price" "$31" "info" "Centralize your monitoring of systems and services" "color" "#14D071" "list" (slice "– Java, Ruby, Python, Go, Node, and more" " – Out-of-the-box application health" " – 1 million trace events per host included") "divider" "true") }}</div>
+                  <div class="card-3-wrapper col-sm mb-5">{{ partial "price-card" (dict "heading" "LOGS MANAGEMENTS" "price" "$1.27" "info" "Analyze and explore log data in context" "color" "#FF635A" "list" (slice "– Collect from any source" "– Automated & custom processing" "– Fully integrated with Infrastructure and APM")) }}</div>
+                </div>             
+              </div>
+            </div>
+            <div class="row row-2">
+              <div class="col-sm mb-5">
+                <div>{{ partial "feature" (dict "imageUrl" "https://datadogko.s3.us-east-2.amazonaws.com/images/index/apm-bg.png" "title" "APM" "subHeading" "Get full visibility into modern applications") }}</div>
+                <div></div>
+                <img src="" >
+              </div>
+              <div class=" col-sm mb-5">
+                <div>{{ partial "feature" (dict "imageUrl" "https://datadogko.s3.us-east-2.amazonaws.com/images/index/infra-bg.png" "title" "INFASTRUCTURE" "subHeading" "See across systems, apps, and services") }}</div>
+              </div>
+            </div>
+            <div class="row row-3 mb-5">
+              <div class="col-sm mb-5 d-flex flex-column">
+                <div class="mb-5">{{ partial "feature" (dict "imageUrl" "https://datadogko.s3.us-east-2.amazonaws.com/images/index/logs-bg.png" "title" "LOGS MANAGEMENT" "subHeading" "Analyze and explore log data in context") }}</div>
+                <div>{{ partial "customers" .}}</div>
+              </div>
+              <div class=" col-sm">
+                <div>{{ partial "carousel" . }}</div>
+              </div>
+            </div>
         </div>
       </div>
 

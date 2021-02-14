@@ -1,0 +1,52 @@
+#price-card-container  {
+    background-color: #F5F5F5;
+
+    .price-card-inner {
+        padding: 10px;
+        height: 100%;;
+        .per-host-per-month {
+            font-size: 12px;
+        }
+    
+        ul {
+            padding: 0;
+            list-style-type:none;
+        }
+    
+        span{
+            display:inline-block;
+            padding-bottom:2px;
+            width: 80px;
+    
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+// lg
+@media (min-width: 992px) { 
+    #price-card-container  {
+        padding: 10px;
+        // height: 400px;
+        //width: 150px;
+    }
+}
+
+// xl
+@media (min-width: 1200px) { 
+    #price-card-container  {
+        padding: 10px;
+        height: 461px;
+        min-width: 180px;
+        font-size: 80%;
+    }
+}
+
+// #price-card-mobile-container {
+//     background-color: #F5F5F5;
+//     width: 100%;;
+// }
