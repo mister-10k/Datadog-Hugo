@@ -1,9 +1,14 @@
 #price-card-container  {
     background-color: #F5F5F5;
+    padding: 20px 10px;
 
     .price-card-inner {
-        padding: 10px;
         height: 100%;;
+        padding-left: 8px;
+        padding-right: 8px;
+        .heading {
+            min-height: 48px;
+        }
         .per-host-per-month {
             font-size: 12px;
         }
@@ -24,40 +29,43 @@
     }
 }
 
-// sm
 @media (min-width: 0px) { 
     #price-card-container  {
         .price-card-inner {
             span{
-                width: 80px;
+                width: 83px;
             }
         }
     }
 }
+
+
+@media (max-width: 575px) { 
+    #price-card-container  {
+        height: 450px;
+        .price-card-inner {
+            border: none !important;
+        }
+    }
+}
+
+// md
+@media (min-width: 576px) { 
+    #price-card-container  {
+        height: 598px;
+    }
+}
+
 
 
 // lg
-@media (min-width: 992px) { 
-    #price-card-container  {
-        padding: 10px;
-        // height: 400px;
-        //width: 150px;
-
-        .price-card-inner {
-            span{
-                width: 80px;
-            }
-        }
-    }
-}
 
 // xl
 @media (min-width: 1200px) { 
     #price-card-container  {
-        padding: 10px;
-        height: 461px;
         min-width: 180px;
         font-size: 80%;
+        height: 460px;
 
         .price-card-inner {
             span{

@@ -1,7 +1,7 @@
 <div id="price-card-container">
-    <div class="price-card-inner d-flex flex-column justify-content-between {{ if eq "true" .divider }}border-right p-2{{ end }}">
+    <div class="price-card-inner d-flex flex-column justify-content-between {{ if eq "true" .divider }}border-right{{ end }}">
         <div class="d-flex flex-column">
-            <label style="color: {{.color}};" class="heading mb-3 font-weight-bold">{{.heading}}</label>
+            <label style="color: {{.color}};" class="heading font-weight-bold">{{.heading}}</label>
             <label class="starting-at">Starting at</label>
             <h1 class="price font-weight-bold">{{.price}}</h1>
             <label class="per-host-per-month">Per host, per month*</label>

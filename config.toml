@@ -1,0 +1,4 @@
+baseURL= "http://datadogko.s3-website.us-east-2.amazonaws.com"
+languageCode= "en-us"
+title= "Datadog"
+disableKinds= ["taxonomy", "taxonomyTerm"]

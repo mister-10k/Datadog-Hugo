@@ -1,4 +1,5 @@
  #index-container {
+  overflow-y: hidden; 
   .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none;
