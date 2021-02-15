@@ -1,4 +1,9 @@
  #index-container {
+  .btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+  }
+
     #sidebar-wrapper {
       background-color: #724EEF;
       width: 180px;
@@ -53,8 +58,6 @@
               border-radius: 0px;          
             }
           }
-
-          
         }
       }
     }

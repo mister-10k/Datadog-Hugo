@@ -16,7 +16,6 @@
         span{
             display:inline-block;
             padding-bottom:2px;
-            width: 80px;
     
             a {
                 text-decoration: none;
@@ -25,6 +24,16 @@
     }
 }
 
+// sm
+@media (min-width: 0px) { 
+    #price-card-container  {
+        .price-card-inner {
+            span{
+                width: 80px;
+            }
+        }
+    }
+}
 
 
 // lg
@@ -33,6 +42,12 @@
         padding: 10px;
         // height: 400px;
         //width: 150px;
+
+        .price-card-inner {
+            span{
+                width: 80px;
+            }
+        }
     }
 }
 
@@ -43,6 +58,12 @@
         height: 461px;
         min-width: 180px;
         font-size: 80%;
+
+        .price-card-inner {
+            span{
+                width: 65px;
+            }
+        }
     }
 }
 
