@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Datadog</title>
-    <link>http://datadogko.s3-website.us-east-2.amazonaws.com/</link>
-    <description>Recent content in Home on Datadog</description>
+    <title>Home on Cloud Monitoring as a Service | Datadog</title>
+    <link>https://datadogko.com/</link>
+    <description>Recent content in Home on Cloud Monitoring as a Service | Datadog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://datadogko.s3-website.us-east-2.amazonaws.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://datadogko.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://datadogko.s3-website.us-east-2.amazonaws.com/about/</link>
+      <link>https://datadogko.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://datadogko.s3-website.us-east-2.amazonaws.com/about/</guid>
+      <guid>https://datadogko.com/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>http://datadogko.s3-website.us-east-2.amazonaws.com/blog/</link>
+      <link>https://datadogko.com/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://datadogko.s3-website.us-east-2.amazonaws.com/blog/</guid>
+      <guid>https://datadogko.com/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Customers</title>
-      <link>http://datadogko.s3-website.us-east-2.amazonaws.com/customers/</link>
+      <link>https://datadogko.com/customers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://datadogko.s3-website.us-east-2.amazonaws.com/customers/</guid>
+      <guid>https://datadogko.com/customers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docs</title>
-      <link>http://datadogko.s3-website.us-east-2.amazonaws.com/docs/</link>
+      <link>https://datadogko.com/docs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://datadogko.s3-website.us-east-2.amazonaws.com/docs/</guid>
+      <guid>https://datadogko.com/docs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pricing</title>
-      <link>http://datadogko.s3-website.us-east-2.amazonaws.com/pricing/</link>
+      <link>https://datadogko.com/pricing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://datadogko.s3-website.us-east-2.amazonaws.com/pricing/</guid>
+      <guid>https://datadogko.com/pricing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Product</title>
-      <link>http://datadogko.s3-website.us-east-2.amazonaws.com/product/</link>
+      <link>https://datadogko.com/product/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://datadogko.s3-website.us-east-2.amazonaws.com/product/</guid>
+      <guid>https://datadogko.com/product/</guid>
       <description></description>
     </item>
     

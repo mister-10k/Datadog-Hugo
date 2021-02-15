@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://datadogko.s3-website.us-east-2.amazonaws.com/about/</loc>
+    <loc>https://datadogko.com/about/</loc>
   </url>
   
   <url>
-    <loc>http://datadogko.s3-website.us-east-2.amazonaws.com/blog/</loc>
+    <loc>https://datadogko.com/blog/</loc>
   </url>
   
   <url>
-    <loc>http://datadogko.s3-website.us-east-2.amazonaws.com/customers/</loc>
+    <loc>https://datadogko.com/customers/</loc>
   </url>
   
   <url>
-    <loc>http://datadogko.s3-website.us-east-2.amazonaws.com/docs/</loc>
+    <loc>https://datadogko.com/docs/</loc>
   </url>
   
   <url>
-    <loc>http://datadogko.s3-website.us-east-2.amazonaws.com/</loc>
+    <loc>https://datadogko.com/</loc>
   </url>
   
   <url>
-    <loc>http://datadogko.s3-website.us-east-2.amazonaws.com/pricing/</loc>
+    <loc>https://datadogko.com/pricing/</loc>
   </url>
   
   <url>
-    <loc>http://datadogko.s3-website.us-east-2.amazonaws.com/product/</loc>
+    <loc>https://datadogko.com/product/</loc>
   </url>
   
 </urlset>
